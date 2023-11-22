@@ -36,13 +36,13 @@ public class CadastroDeProdutos {
 		Produto celular = new Produto("Xiaomi Redmi", "Muito legal", new BigDecimal("800"), celulares);
 	    
 	    EntityManager em = JPAUtil.getEntityManager();
-	    ProdutoDAO produtoDao = new ProdutoDAO(em);
-	    CategoriaDAO categoriaDao = new CategoriaDAO(em);
+	    ProdutoDAO produtoDAO = new ProdutoDAO(em);
+	    CategoriaDAO categoriaDAO = new CategoriaDAO(em);
 	    
 	    em.getTransaction().begin();
 	    
-	    categoriaDao.cadastrar(celulares);
-	    produtoDao.cadastrar(celular);
+	    categoriaDAO.cadastrar(celulares);
+	    produtoDAO.cadastrar(celular);
 	    
 	    em.getTransaction().commit();
 	    em.close();

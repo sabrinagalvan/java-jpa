@@ -12,7 +12,6 @@ public class ProdutoDAO {
 	private EntityManager em;
 
 	public ProdutoDAO(EntityManager em) {
-		super();
 		this.em = em;
 	}
 	
