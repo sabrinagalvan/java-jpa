@@ -19,15 +19,17 @@ public class Livro extends Produto {
 	public String getAutor() {
 		return autor;
 	}
+	
 	public void setAutor(String autor) {
 		this.autor = autor;
 	}
+	
 	public Integer getNomeroDePaginas() {
 		return nomeroDePaginas;
 	}
+	
 	public void setNomeroDePaginas(Integer nomeroDePaginas) {
 		this.nomeroDePaginas = nomeroDePaginas;
 	}
-	
 	
 }

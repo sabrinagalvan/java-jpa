@@ -21,5 +21,4 @@ public class ClienteDAO {
 		return em.find(Cliente.class, id);
 	}
 	
-
 }

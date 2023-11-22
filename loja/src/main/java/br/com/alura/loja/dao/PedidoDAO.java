@@ -20,7 +20,6 @@ public class PedidoDAO {
 		this.em.persist(pedido);
 	}
 	
-	
 	public BigDecimal valorTotalVendido() {
 		String jpql = "SELECT SUM(p.valorTotal) FROM Pedido p";
 		return em.createQuery(jpql, BigDecimal.class)
@@ -45,7 +44,7 @@ public class PedidoDAO {
 	public Pedido buscarPedidoComCliente(Long id) {
 		return em.createQuery("SELECT p FROM Pedido p JOIN FETCH p.cliente WHERE p.id = :id", Pedido.class)
 				.setParameter("id", id)
-				.getSingleResult()
-;	}
+				.getSingleResult();
+	}
 	
 }

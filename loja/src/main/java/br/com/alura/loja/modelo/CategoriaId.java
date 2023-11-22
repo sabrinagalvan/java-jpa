@@ -34,6 +34,4 @@ public class CategoriaId implements Serializable{
 		this.tipo = tipo;
 	}
 	
-	
-	
 }

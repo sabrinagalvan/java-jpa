@@ -31,8 +31,5 @@ public class RelatorioDeVendasVo {
 	public LocalDate getDataUltimaVenda() {
 		return dataUltimaVenda;
 	}
-	
-	
-	
 
 }
